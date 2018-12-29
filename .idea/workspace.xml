@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="project" targetName="project" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd6ae1a9-ef15-4a15-a337-31c2ff2a8765" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Physics.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Physics.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Str_Const.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View.h" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="375886839">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bmp" value="1" />
+          <entry key="c" value="14" />
+          <entry key="h" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="1" />
+          <entry key="ObjectiveC" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="c" value="1939" />
+          <entry key="h" value="85" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="2024" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1598622359">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="42" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="10" />
+          <entry key="project.open.time.8" value="11" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="44" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="c" value="17537" />
+          <entry key="h" value="1758" />
+          <entry key="txt" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="40" />
+          <entry key="ObjectiveC" value="19295" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Makefile" value="1" />
+          <entry key="c" value="21" />
+          <entry key="cmake" value="2" />
+          <entry key="h" value="35" />
+          <entry key="txt" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="6" />
+          <entry key="ObjectiveC" value="56" />
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1739719083">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="c" value="4" />
+          <entry key="h" value="3" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="2" />
+          <entry key="ObjectiveC" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="c" value="6619" />
+          <entry key="h" value="634" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="7253" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="project" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Physics.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2212">
+              <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Physics.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="65" column="205" selection-start-line="65" selection-start-column="205" selection-end-line="65" selection-end-column="205" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Str_Const.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>501</find>
+      <find>180</find>
+      <find>srand</find>
+      <find>cells</find>
+      <find>tank_motion</find>
+      <find>tank_rotation</find>
+      <find>move</find>
+      <find>POINT</find>
+      <find>tank-&gt;</find>
+      <find>box[i]</find>
+      <find>shoot</find>
+      <find>extern</find>
+      <find>shooting_flag</find>
+      <find>main</find>
+      <find>flag</find>
+      <find>string</find>
+      <find>-&gt;</find>
+      <find>i</find>
+      <find>[i]</find>
+      <find>[0]</find>
+      <find>10</find>
+      <find>make_sh</find>
+      <find>players.</find>
+      <find>players.tank[i]</find>
+      <find>ready</find>
+      <find>n_sh</find>
+      <find>gun.shot</find>
+      <find>gun.shot[</find>
+      <find>please</find>
+      <find>angle</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>project</replace>
+      <replace>*x</replace>
+      <replace>401</replace>
+      <replace>game-&gt;tank[i].</replace>
+      <replace>box[j]</replace>
+      <replace>.</replace>
+      <replace>[0]</replace>
+      <replace>[1]</replace>
+      <replace>30</replace>
+      <replace>gun</replace>
+      <replace>shot</replace>
+      <replace>shot[</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Desktop/tank.c" />
+        <option value="$PROJECT_DIR$/src/simple_snake.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/Struct.c" />
+        <option value="$PROJECT_DIR$/src/ALTER TANK - Ahmad Salimi.c" />
+        <option value="$USER_HOME$/Desktop/saber.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/Generated_Maps/gmaps.txt" />
+        <option value="$PROJECT_DIR$/src/LIBs/Logic.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/Logic.h" />
+        <option value="$PROJECT_DIR$/src/LIBs/play.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/MapGenerate.h" />
+        <option value="$PROJECT_DIR$/src/LIBs/Constants.h" />
+        <option value="$PROJECT_DIR$/src/LIBs/MapGenerate.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/Physics.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/View.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/View.h" />
+        <option value="$PROJECT_DIR$/src/LIBs/Play.h" />
+        <option value="$PROJECT_DIR$/src/LIBs/Physics.h" />
+        <option value="$PROJECT_DIR$/src/LIBs/Play.c" />
+        <option value="$PROJECT_DIR$/src/LIBs/Struct.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/Physics.h" />
+        <option value="$PROJECT_DIR$/src/View.h" />
+        <option value="$PROJECT_DIR$/src/main.c" />
+        <option value="$PROJECT_DIR$/src/Str_Const.h" />
+        <option value="$PROJECT_DIR$/src/View.c" />
+        <option value="$PROJECT_DIR$/src/Physics.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1040" />
+    <option name="height" value="1110" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>C/C++</id>
+          </State>
+          <State>
+            <id>GeneralC/C++</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>ClangTidyInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bricks_Breaker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bricks_Breaker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="drawing&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nik\Documents\GitHub\97106013\src\LIBs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.project">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="project" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project" TARGET_NAME="project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project" RUN_TARGET_NAME="project">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.project" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd6ae1a9-ef15-4a15-a337-31c2ff2a8765" name="Default Changelist" comment="" />
+      <created>1544801902595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544801902595</updated>
+      <workItem from="1544801904557" duration="15820000" />
+      <workItem from="1544859165253" duration="1727000" />
+      <workItem from="1544868228340" duration="9653000" />
+      <workItem from="1544878359317" duration="18730000" />
+      <workItem from="1544947879649" duration="947000" />
+      <workItem from="1544948871416" duration="50000" />
+      <workItem from="1544948950893" duration="4445000" />
+      <workItem from="1544955981542" duration="290000" />
+      <workItem from="1544961873657" duration="1476000" />
+      <workItem from="1544975842260" duration="16687000" />
+      <workItem from="1545036943370" duration="6159000" />
+      <workItem from="1545057084980" duration="23920000" />
+      <workItem from="1545128561409" duration="1275000" />
+      <workItem from="1545138773940" duration="3074000" />
+      <workItem from="1545163279099" duration="15000" />
+      <workItem from="1545164938715" duration="1146000" />
+      <workItem from="1545167080407" duration="41000" />
+      <workItem from="1545220611359" duration="24985000" />
+      <workItem from="1545284473797" duration="665000" />
+      <workItem from="1545288878212" duration="29021000" />
+      <workItem from="1545331450487" duration="885000" />
+      <workItem from="1545402455156" duration="17970000" />
+      <workItem from="1545461460628" duration="801000" />
+      <workItem from="1545467350791" duration="476000" />
+      <workItem from="1545469780505" duration="1672000" />
+      <workItem from="1545476559807" duration="6604000" />
+      <workItem from="1545499877096" duration="11192000" />
+      <workItem from="1545555378038" duration="10044000" />
+      <workItem from="1545584899640" duration="6543000" />
+      <workItem from="1545592933134" duration="4996000" />
+      <workItem from="1545635471418" duration="2460000" />
+      <workItem from="1545640724067" duration="4536000" />
+      <workItem from="1545646543215" duration="689000" />
+      <workItem from="1545661886257" duration="14891000" />
+      <workItem from="1545725191425" duration="625000" />
+      <workItem from="1545726274977" duration="162000" />
+      <workItem from="1545726685413" duration="17000" />
+      <workItem from="1545726727167" duration="24000" />
+      <workItem from="1545732760097" duration="3483000" />
+      <workItem from="1545757970825" duration="12555000" />
+      <workItem from="1545771866709" duration="3260000" />
+      <workItem from="1545817199359" duration="2645000" />
+      <workItem from="1545833030743" duration="1468000" />
+      <workItem from="1545837003986" duration="20179000" />
+      <workItem from="1545900707961" duration="1176000" />
+      <workItem from="1545903676246" duration="12536000" />
+      <workItem from="1545982043167" duration="2751000" />
+      <workItem from="1545985486703" duration="29093000" />
+      <workItem from="1546015248616" duration="10181000" />
+      <workItem from="1546080143812" duration="6751000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="350791000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1653" height="896" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4986911" weight="0.30361757" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24952978" />
+      <window_info id="Favorites" order="2" sideWeight="0.5013089" side_tool="true" weight="0.12037618" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936507" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32984293" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936507" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.30628273" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.29450262" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32936507" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/tank.bmp" />
+    <entry file="file://$USER_HOME$/Desktop/tank.c" />
+    <entry file="file://$PROJECT_DIR$/../base/src/simple_snake.c" />
+    <entry file="file://$PROJECT_DIR$/src/simple_snake.c" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Struct.c" />
+    <entry file="file://$USER_HOME$/Desktop/saber.c" />
+    <entry file="file://$PROJECT_DIR$/src/ALTER TANK - Ahmad Salimi.c" />
+    <entry file="file://$PROJECT_DIR$/sdl2/sdl2-gfx-include/SDL2_gfxPrimitives.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Generated_Maps/gmaps.txt" />
+    <entry file="file://C:/msys32/mingw64/include/tkDecls.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="402" column="59" selection-start-line="402" selection-start-column="59" selection-end-line="402" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/msys32/mingw64/x86_64-w64-mingw32/include/math.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="182" column="17" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdl2/SDL2_ttf-2.0.14/SDL_ttf.h" />
+    <entry file="file://$PROJECT_DIR$/sdl2/sdl2-include/SDL_ttf.h" />
+    <entry file="file://$PROJECT_DIR$/sdl2/SDL2_ttf-2.0.14/debian/examples/Makefile" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="76" lean-forward="true" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdl2/sdl2-include/SDL.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-806" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Logic.h" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Logic.c" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/MapGenerate.h" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Physics.h" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/MapGenerate.c" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Play.h" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Constants.h" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Struct.h" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Play.c" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/View.c" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/View.h" />
+    <entry file="file://$PROJECT_DIR$/src/LIBs/Physics.c" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Physics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Str_Const.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="65" column="205" selection-start-line="65" selection-start-column="205" selection-end-line="65" selection-end-column="205" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Physics.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2212">
+          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

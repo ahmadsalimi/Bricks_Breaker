@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Bricks_Breaker"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Bricks_Breaker">
+				<Option output="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Bricks_Breaker.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2"/>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-include"/>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include"/>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include/c++/8.2.1/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/include"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/include-fixed"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 Bricks_Breaker"/>
+					<CompileFile command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Bricks_Breaker/fast">
+				<Option output="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Bricks_Breaker.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2"/>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-include"/>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include"/>
+					<Add directory="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include/c++/8.2.1/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/include"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../include"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/include-fixed"/>
+					<Add directory="C:/msys32/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.1/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 Bricks_Breaker/fast"/>
+					<CompileFile command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys32/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/.name">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/codeStyles/Project.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/codeStyles/codeStyleConfig.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/dictionaries/nik.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/inspectionProfiles/Project_Default.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/misc.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/modules.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/project.iml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/vcs.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/.idea/workspace.xml">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/CMakeLists.txt">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/CMakeCache.txt">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/Makefile">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/cmake_install.cmake">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/libproject.dll.a">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/project.cbp">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/project.exe">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-include/SDL2_framerate.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-include/SDL2_gfxPrimitives.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-include/SDL2_gfxPrimitives_font.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-include/SDL2_imageFilter.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-include/SDL2_rotozoom.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-gfx-lib/libsdl-gfx.a">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_assert.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_atomic.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_audio.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_bits.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_blendmode.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_clipboard.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_config.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_cpuinfo.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_egl.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_endian.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_error.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_events.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_filesystem.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_gamecontroller.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_gesture.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_haptic.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_hints.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_joystick.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_keyboard.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_keycode.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_loadso.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_log.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_main.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_messagebox.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_mouse.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_mutex.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_name.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengl.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengl_glext.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengles.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengles2.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengles2_gl2.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengles2_gl2ext.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengles2_gl2platform.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_opengles2_khrplatform.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_pixels.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_platform.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_power.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_quit.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_rect.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_render.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_revision.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_rwops.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_scancode.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_shape.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_stdinc.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_surface.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_system.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_syswm.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_assert.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_common.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_compare.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_crc32.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_font.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_fuzzer.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_harness.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_images.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_log.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_md5.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_memory.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_test_random.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_thread.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_timer.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_touch.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_types.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_version.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_video.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/SDL_vulkan.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/begin_code.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-include/close_code.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-lib/libSDL2.a">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/sdl2/sdl2-lib/libSDL2main.a">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Constants.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Logic.c">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Logic.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/MapGenerate.c">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/MapGenerate.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Physics.c">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Physics.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Play.c">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Play.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/Struct.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/View.c">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/LIBs/View.h">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/main.c">
+			<Option target="Bricks_Breaker"/>
+		</Unit>
+		<Unit filename="C:/Users/nik/Documents/GitHub/Bricks_Breaker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
