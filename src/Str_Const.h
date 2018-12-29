@@ -1,4 +1,5 @@
 #include <SDL.h>
+
 #ifndef PROJECT_STR_CONST_H
 #define PROJECT_STR_CONST_H
 
@@ -17,6 +18,7 @@
 #define SHOT_RADIUS 8
 #define PI 3.141592653589
 #define FIRE_DELAY 10
+#define BOMB 10000
 
 typedef struct {
     bool life;
@@ -36,23 +38,21 @@ typedef struct {
 typedef struct {
     Sint16 x;
     Sint16 y;
-    Sint16 r;
-} BRICK;
-
-typedef struct {
-    Sint16 x;
-    Sint16 y;
 } POINT;
 
 extern int n;
 extern Sint16 n_shots;
-extern bool state;
+extern Sint8 state;
+extern Sint8 menu_state;
+extern int last_number;
+extern int load_number;
 extern bool flag;
 extern bool make;
 extern bool shooting_flag;
+extern bool save_mode;
 extern GUN gun;
 extern Sint16 x2, y2;
-extern BRICK bricks[1000];
+extern Sint16 bricks[10000];
 extern SHOT shot[1000];
 
 #endif //PROJECT_STR_CONST_H

@@ -9,6 +9,12 @@ void show_starting_menu();
 
 void make_bricks();
 
+void save();
+
+void load();
+
 void drawing();
+
+void game_over();
 
 void Quit();

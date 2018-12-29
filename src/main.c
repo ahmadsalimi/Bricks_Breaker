@@ -13,32 +13,24 @@
 #endif /*main*/
 
 int n;
-BRICK bricks[1000];
+Sint16 bricks[10000];
 bool make = 1;
-
-void setting() {
-    srand((unsigned int) time(NULL));
-    //random position for gun:
-    gun.x = (Sint16) (START_X + rand() % ((int) FINISH_X - START_X));
-    gun.y = FINISH_Y;
-    gun.angle = -90;
-    gun.score = 0;
-    for (int i = 0; i < 6 * n * n; i++){
-        bricks[i].r = 0;
-    }
-}
 
 
 void play_game() {
-    while (state && flag) {
-        setting(); //settings before starting the game
-        make_bricks();
-        while (1) {
+    while (state == 1 && flag) {
+        while (state == 1) {
             int start_ticks = SDL_GetTicks();
             if (events() == -1) {
                 flag = 0; //close the window if closing button pressed
                 break;
             }
+            make_shots();
+            if (!gun.shots_in_screen && !save_mode){
+                gun_motion();
+                gun_rotation();
+            }
+            shot_motion();
             drawing(); //draw everything at every frame
             while (SDL_GetTicks() - start_ticks < 1000 / FPS); //making a delay every frame
         }
@@ -49,8 +41,8 @@ int main(int argc, char *argv[]) {
     state = 0; // this value is to show the starting menu at first
     show_window(); // appearing the game window
     show_starting_menu(); // showing the starting menu
-    n = 3;
     play_game(); // all happenings of the game are here
+    game_over();
     Quit(); // destroying the window
     return 0;
 }
