@@ -43,6 +43,7 @@ void check_storage() {
 }
 
 void load(){
+    srand((unsigned int) time(NULL));
     storage = fopen("C:\\Users\\nik\\Documents\\GitHub\\Bricks_Breaker\\src\\storage.save", "r");
     char line[10000];
     fgets(line, 10000, storage);
@@ -76,7 +77,7 @@ void show_starting_menu() {
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         SDL_RenderClear(renderer);
         if (menu_state == 0) {
-            stringRGBA(renderer, 45, SCREEN_HEIGHT / 2, "If you want to start a new game press \"ENTER\" and if you want to load a new game press \"L\".", 0, 0, 0, 255);
+            stringRGBA(renderer, 50, SCREEN_HEIGHT / 2, "If you want to start a new game press \"ENTER\" and if you want to load a game press \"L\".", 0, 0, 0, 255);
         } else if (menu_state == 1) { // New game
             char string[50];
             sprintf(string, "Please set the n value by pressing the keys up or down. n = %d", n);
@@ -84,7 +85,7 @@ void show_starting_menu() {
         } else if (menu_state == 2) { // Load a game
             check_storage();
             if (!(last_number - 1)){ // there is no saved game!
-                stringRGBA(renderer, 45, SCREEN_HEIGHT / 2, "There is no saved game. Press \"ESC\" to start a new game!", 0, 0, 0, 255);
+                stringRGBA(renderer, 170, SCREEN_HEIGHT / 2, "There is no saved game. Press \"ESC\" to start a new game!", 0, 0, 0, 255);
             } else {
                 char string[50];
                 sprintf(string, "Please Tell us which saved game do you want to play: %d", load_number);
@@ -104,7 +105,6 @@ void draw_borders() {
 }
 
 void make_bricks() {
-    printf("pulling!\n");
     for (int i = 0; i < 2 * n; i++) {
         if (bricks[i + (2 * n) * (3 * n - 2)] > 0 && bricks[i + (2 * n) * (3 * n - 2)] != BOMB) { // checking the finish of the game
             state = 2;
@@ -118,7 +118,6 @@ void make_bricks() {
             bricks[j + (2 * n) * i] = bricks[j + (2 * n) * (i - 1)]; //moving the bricks down a row
         }
     }
-    printf("making!\n");
     for (int i = 0; i < 2 * n; i++) {
         bricks[i] = 0;
     }
@@ -131,7 +130,6 @@ void make_bricks() {
     }
     if (g + (double) num / (2 * n) > 1) {
         int r = rand() % (2 * n - num);
-        printf("making bomb\nnum = %d, r = %d\n", num, r);
         for (int i = 0, j = 0;; i++) {
             if (j == r && bricks[i] == 0) {
                 bricks[i] = BOMB; // it is a bomb
@@ -142,16 +140,16 @@ void make_bricks() {
             }
         }
     }
-    printf("made!\n");
 }
 
 void draw_bricks() {
     for (int i = 0; i < 3 * n; i++) {
         for (int j = 0; j < 2 * n; j++) {
+            int a = i, b = j;
             if (bricks[j + (2 * n) * i] > 0 && bricks[j + (2 * n) * i] != BOMB) {
                 thickLineRGBA(renderer, (Sint16) (START_X + j * BRICK_SIZE + 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Sint16) (START_X + j * BRICK_SIZE + BRICK_SIZE - 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Uint8) (BRICK_SIZE - 2), 255, 0, 0, (Uint8) (255 * ((double) bricks[j + (2 * n) * i] / (gun.score ? gun.score : 1))));
                 char resistance[3];
-                sprintf(resistance, "%d", bricks[j + (2 * n) * i]);
+                sprintf(resistance, "%d", bricks[b + (2 * n) * a]);
                 stringRGBA(renderer, (Sint16) (START_X + BRICK_SIZE * j + BRICK_SIZE / 2 - 2), (Sint16) (START_Y + BRICK_SIZE * i + BRICK_SIZE / 2 - 2), resistance, (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), 255);
             } else if (bricks[j + (2 * n) * i] == BOMB) {
                 thickLineRGBA(renderer, (Sint16) (START_X + j * BRICK_SIZE + 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Sint16) (START_X + j * BRICK_SIZE + BRICK_SIZE - 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Uint8) (BRICK_SIZE - 2), 0, 176, 188, 255);
@@ -189,7 +187,8 @@ void save() {
         fprintf(storage, "%d ", bricks[i]);
     }
     save_mode = 0;
-    file_checked = 0;
+    last_number++;
+    fclose(storage);
 }
 
 void view_save_tool() {

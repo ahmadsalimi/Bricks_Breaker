@@ -106,7 +106,7 @@ void shot_reflection(int i) {
         shot[i].x = 0;
         shot[i].y = 0;
         gun.shots_in_screen--;
-        if (!gun.shots_in_screen) {
+        if (gun.shots_in_screen <= 0) {
             make_bricks();
         }
         return;
@@ -295,9 +295,9 @@ void shot_reflection(int i) {
 void shot_motion() {
     for (int i = 0; i < n_shots; i++) {
         if (shot[i].life) {
-            shot_reflection(i);
             shot[i].x += 2 * SHOT_STEP * cos(shot[i].angle * PI / 180);
             shot[i].y += 2 * SHOT_STEP * sin(shot[i].angle * PI / 180);
+            shot_reflection(i);
         }
     }
 }
