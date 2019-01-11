@@ -14,17 +14,16 @@ FILE *storage;
 int last_number;
 int load_number = 1;
 bool file_checked = 0;
+Sint8 menu_state = 0; // 0(starting), 1(new game), 2(load a game)
 
-Sint8 menu_state = 0;
-
-void show_window() {
+void show_window() { // The following functions make the window of the game
     SDL_Init(SDL_INIT_VIDEO);
     window = SDL_CreateWindow("Brick Breaker", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_OPENGL);
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 }
 
 void check_storage() {
-    storage = fopen("C:\\Users\\nik\\Documents\\GitHub\\Bricks_Breaker\\src\\storage.save", "r");
+    storage = fopen("../storage.save", "r"); // open the saving file.
     char line[10000];
     last_number = 1;
     fgets(line, 10000, storage);
@@ -39,21 +38,21 @@ void check_storage() {
         last_number++;
     }
     file_checked = 1;
-    fclose(storage);
+    fclose(storage); //close the file.
 }
 
 void load(){
     srand((unsigned int) time(NULL));
-    storage = fopen("C:\\Users\\nik\\Documents\\GitHub\\Bricks_Breaker\\src\\storage.save", "r");
+    storage = fopen("../storage.save", "r"); // open the saving file.
     char line[10000];
-    fgets(line, 10000, storage);
+    fgets(line, 10000, storage); // get the first line of file: "Storage File"
     int num = 0;
     while (num != load_number){
-        fscanf(storage, "%d", &num);
+        fscanf(storage, "%d", &num); // get the number of save.
         if (num == load_number) {
-            fscanf(storage, "%d %hi %hi %hi %hi ", &n, &(gun.score), &(gun.x), &(gun.y), &(gun.angle));
+            fscanf(storage, "%d %hi %hi %hi %hi ", &n, &(gun.score), &(gun.x), &(gun.y), &(gun.angle)); // scan the information of saved game
             for (int i = 0; i < 6 * n * n; i++) {
-                fscanf(storage, "%hi ", &bricks[i]);
+                fscanf(storage, "%hi ", &bricks[i]); // scan the information of bricks
             }
             break;
         }
@@ -63,37 +62,37 @@ void load(){
             break;
         }
     }
-    fclose(storage);
+    fclose(storage); // close the file.
     file_checked = 0;
 }
 
-void show_starting_menu() {
+void show_starting_menu() { // This function shows starting menu of the game. menu_state 0 means it's in the first state, menu_state 1 means player wants to start a new game, menu_state 2 means player wants to load a saved game.
     n = 1;
     while (state == 0) {
-        if (menu_events() == -1) {
+        if (menu_events() == -1) { // this line calls menu_events function in physics.c file. if returned value is -1, it means close button pressed.
             flag = 0;
             break;
         }
-        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        SDL_RenderClear(renderer);
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // background color of window
+        SDL_RenderClear(renderer); // In each frame, the contents of the window should be cleared and re-drawn in the following.
         if (menu_state == 0) {
-            stringRGBA(renderer, 50, SCREEN_HEIGHT / 2, "If you want to start a new game press \"ENTER\" and if you want to load a game press \"L\".", 0, 0, 0, 255);
+            stringRGBA(renderer,/*x*/ 50 ,/*y*/ SCREEN_HEIGHT / 2, "If you want to start a new game press \"ENTER\" and if you want to load a game press \"L\".",/*RGBA color*/ 0, 0, 0, 255); // this function shows a string in the window.
         } else if (menu_state == 1) { // New game
             char string[50];
-            sprintf(string, "Please set the n value by pressing the keys up or down. n = %d", n);
+            sprintf(string, "Please set the n value by pressing the keys up or down. n = %d", n); // the value of n will be changed by menu_events function that is called in the beginning of this function.
             stringRGBA(renderer, 150, SCREEN_HEIGHT / 2, string, 0, 0, 0, 255);
         } else if (menu_state == 2) { // Load a game
-            check_storage();
+            check_storage(); // this function checks the saving storage to know how many games are saved in the file.
             if (!(last_number - 1)){ // there is no saved game!
                 stringRGBA(renderer, 170, SCREEN_HEIGHT / 2, "There is no saved game. Press \"ESC\" to start a new game!", 0, 0, 0, 255);
             } else {
                 char string[50];
-                sprintf(string, "Please Tell us which saved game do you want to play: %d", load_number);
+                sprintf(string, "Please Tell us which saved game do you want to play: %d", load_number); // load_number will be changed by menu_events function that is called in the beginning of this function.
                 stringRGBA(renderer, 45, SCREEN_HEIGHT / 2, string, 0, 0, 0, 255);
                 stringRGBA(renderer, 45, SCREEN_HEIGHT / 2 + 15, "change the number using the keys up or down. Press \"ENTER\" to load.", 0, 0, 0, 255);
             }
         }
-        SDL_RenderPresent(renderer);
+        SDL_RenderPresent(renderer); // this function presents the new drawn items.
     }
 }
 
@@ -146,13 +145,17 @@ void draw_bricks() {
     for (int i = 0; i < 3 * n; i++) {
         for (int j = 0; j < 2 * n; j++) {
             int a = i, b = j;
-            if (bricks[j + (2 * n) * i] > 0 && bricks[j + (2 * n) * i] != BOMB) {
-                thickLineRGBA(renderer, (Sint16) (START_X + j * BRICK_SIZE + 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Sint16) (START_X + j * BRICK_SIZE + BRICK_SIZE - 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Uint8) (BRICK_SIZE - 2), 255, 0, 0, (Uint8) (255 * ((double) bricks[j + (2 * n) * i] / (gun.score ? gun.score : 1))));
+            if (bricks[j + (2 * n) * i] > 0 && bricks[j + (2 * n) * i] != BOMB) { // if it's a brick and it's not a bomb!
+                //draw the Brick
+                thickLineRGBA(renderer, (Sint16) (START_X + j * BRICK_SIZE + 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Sint16) (START_X + j * BRICK_SIZE + BRICK_SIZE - 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Uint8) (BRICK_SIZE - 2), 255, 0, 0, (Uint8) (255 * ((double) bricks[j + (2 * n) * i] / (gun.score ? gun.score : 1)))); // transparency depends on the ratio of resistance to the score.
                 char resistance[3];
                 sprintf(resistance, "%d", bricks[b + (2 * n) * a]);
-                stringRGBA(renderer, (Sint16) (START_X + BRICK_SIZE * j + BRICK_SIZE / 2 - 2), (Sint16) (START_Y + BRICK_SIZE * i + BRICK_SIZE / 2 - 2), resistance, (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), 255);
-            } else if (bricks[j + (2 * n) * i] == BOMB) {
+                // show the number of resistance in the brick
+                stringRGBA(renderer, (Sint16) (START_X + BRICK_SIZE * j + BRICK_SIZE / 2 - 2), (Sint16) (START_Y + BRICK_SIZE * i + BRICK_SIZE / 2 - 2), resistance, (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0) /*color depends on ratio of resistance to the score.*/, (Uint8) (bricks[j + (2 * n) * i] * 2 > gun.score ? 255 : 0), 255);
+            } else if (bricks[j + (2 * n) * i] == BOMB) { // it's a bomb!
+                // draw the bomb
                 thickLineRGBA(renderer, (Sint16) (START_X + j * BRICK_SIZE + 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Sint16) (START_X + j * BRICK_SIZE + BRICK_SIZE - 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Uint8) (BRICK_SIZE - 2), 0, 176, 188, 255);
+                // write "BOMB" label
                 stringRGBA(renderer, (Sint16) (START_X + BRICK_SIZE * j + BRICK_SIZE / 5), (Sint16) (START_Y + BRICK_SIZE * i + BRICK_SIZE / 2), "BOMB!!", 255, 255, 255, 255);
             }
         }
@@ -161,15 +164,15 @@ void draw_bricks() {
 
 void draw_gun() {
     if (!gun.shots_in_screen) {
-        lineRGBA(renderer, gun.x, gun.y, x2, y2, 0, 0, 0, 120);
+        lineRGBA(renderer, gun.x, gun.y, x2, y2, 0, 0, 0, 120); // draw the help line if there's not any shots in the screen.
     }
-    filledCircleRGBA(renderer, gun.x, gun.y, GUN_RADIUS, 0, 171, 239, 255);
+    filledCircleRGBA(renderer, gun.x, gun.y, GUN_RADIUS, 0, 171, 239, 255); // draw a circle as a gun
 }
 
 void draw_shots() {
     for (int i = 0; i < n_shots; i++) {
         if (shot[i].life) {
-            filledCircleRGBA(renderer, (Sint16) shot[i].x, (Sint16) shot[i].y, SHOT_RADIUS - 4, 0, 0, 0, 255);
+            filledCircleRGBA(renderer, (Sint16) shot[i].x, (Sint16) shot[i].y, SHOT_RADIUS - 4, 0, 0, 0, 255); // draw shots if exist in the screen.
         }
     }
 }
@@ -177,27 +180,27 @@ void draw_shots() {
 void view_scores() {
     char scoreboard[20];
     sprintf(scoreboard, "Score: %d", gun.score);
-    stringRGBA(renderer, (Sint16) (FINISH_X + 10), START_Y + 10, scoreboard, 0, 0, 0, 255);
+    stringRGBA(renderer, (Sint16) (FINISH_X + 10), START_Y + 10, scoreboard, 0, 0, 0, 255); // write the score at the right side of the game box.
 }
 
 void save() {
-    storage = fopen("C:\\Users\\nik\\Documents\\GitHub\\Bricks_Breaker\\src\\storage.save", "a");
-    fprintf(storage, "\n%d %d %d %d %d %d ", last_number, n, gun.score, gun.x, gun.y, gun.angle);
+    storage = fopen("../storage.save", "a"); // open the save file.
+    fprintf(storage, "\n%d %d %d %d %d %d ", last_number, n, gun.score, gun.x, gun.y, gun.angle); // print the information of the game in the file.
     for (int i = 0; i < 6 * n * n; i++){
-        fprintf(storage, "%d ", bricks[i]);
+        fprintf(storage, "%d ", bricks[i]); // print the information of bricks in the file.
     }
-    save_mode = 0;
+    save_mode = 0; // close the save mode.
     last_number++;
-    fclose(storage);
+    fclose(storage); // close the file.
 }
 
 void view_save_tool() {
-    if (!save_mode) {
+    if (!save_mode) { // playing the game, so save mode is off.
         stringRGBA(renderer, (Sint16) (FINISH_X + 10), START_Y + 70, "If you want to save this game,", 0, 0, 0, 255);
         stringRGBA(renderer, (Sint16) (FINISH_X + 10), START_Y + 85, "press \"S\".", 0, 0, 0, 255);
-    } else if (save_mode) {
+    } else if (save_mode) { //save mode
         if (!file_checked) {
-            check_storage();
+            check_storage(); // check the save storage to know the number of new save.
         }
         stringRGBA(renderer, (Sint16) (FINISH_X + 10), START_Y + 70, "Press \"ESC\" to back to the game.", 0, 0, 0, 255);
         stringRGBA(renderer, (Sint16) (FINISH_X + 10), START_Y + 85, "Press \"ENTER\" to save this game.", 0, 0, 0, 255);
@@ -208,15 +211,15 @@ void view_save_tool() {
 }
 
 void drawing() {
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-    SDL_RenderClear(renderer);
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // Background color of window.
+    SDL_RenderClear(renderer); // In each frame, the contents of the window should be cleared and re-drawn in the following.
     draw_bricks();
-    draw_borders();
+    draw_borders(); //borders of the game.
     draw_gun();
     draw_shots();
     view_scores();
     view_save_tool();
-    SDL_RenderPresent(renderer);
+    SDL_RenderPresent(renderer); // this function presents the new drawn items.
 }
 
 void game_over() {
@@ -225,12 +228,12 @@ void game_over() {
             flag = 0;
             break;
         }
-        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        SDL_RenderClear(renderer);
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // Background color of window.
+        SDL_RenderClear(renderer); // In each frame, the contents of the window should be cleared and re-drawn in the following.
         char Score[20];
-        sprintf(Score, "Game Over. Your score: %d", gun.score);
+        sprintf(Score, "Game Over. Your score: %d", gun.score); //show the score.
         stringRGBA(renderer, SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2, Score, 0, 0, 0, 255);
-        SDL_RenderPresent(renderer);
+        SDL_RenderPresent(renderer); // this function presents the new drawn items.
     }
 }
 

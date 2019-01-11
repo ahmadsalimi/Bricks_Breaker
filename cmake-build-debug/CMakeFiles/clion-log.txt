@@ -1,4 +1,11 @@
-"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\nik\Documents\GitHub\Bricks_Breaker
+/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ahmad/Documents/GitHub/Bricks_Breaker
+-- The C compiler identification is GNU 8.2.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug
+-- Build files have been written to: /home/ahmad/Documents/GitHub/Bricks_Breaker/cmake-build-debug
