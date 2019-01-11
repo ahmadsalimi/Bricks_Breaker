@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ahmad/Documents/GitHub/Bricks_Breaker/src/Physics.c" "/home/ahmad/Documents/GitHub/Bricks_Breaker/cmake-build-debug/CMakeFiles/project.dir/src/Physics.c.o"
-  "/home/ahmad/Documents/GitHub/Bricks_Breaker/src/View.c" "/home/ahmad/Documents/GitHub/Bricks_Breaker/cmake-build-debug/CMakeFiles/project.dir/src/View.c.o"
-  "/home/ahmad/Documents/GitHub/Bricks_Breaker/src/main.c" "/home/ahmad/Documents/GitHub/Bricks_Breaker/cmake-build-debug/CMakeFiles/project.dir/src/main.c.o"
+  "C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/Physics.c" "C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/CMakeFiles/project.dir/src/Physics.c.obj"
+  "C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/View.c" "C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/CMakeFiles/project.dir/src/View.c.obj"
+  "C:/Users/nik/Documents/GitHub/Bricks_Breaker/src/main.c" "C:/Users/nik/Documents/GitHub/Bricks_Breaker/cmake-build-debug/CMakeFiles/project.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
