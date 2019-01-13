@@ -41,6 +41,8 @@ typedef struct {
     Sint16 y;
 } POINT;
 
+// external variables in orde to be used in other files
+
 extern int n; // the dimensions of game will be 2n * 3n
 extern Sint16 n_shots; // number of shots in each level.
 extern Sint8 state; //game state; 0(menu), 1(game), 2(game over)

@@ -104,9 +104,9 @@ void draw_borders() {
 }
 
 void make_bricks() {
-    for (int i = 0; i < 2 * n; i++) {
+    for (int i = 0; i < 2 * n; i++) { // checking if game is over or not
         if (bricks[i + (2 * n) * (3 * n - 2)] > 0 && bricks[i + (2 * n) * (3 * n - 2)] != BOMB) { // checking the finish of the game
-            state = 2;
+            state = 2; // game over
             break;
         }
     }
@@ -118,7 +118,7 @@ void make_bricks() {
         }
     }
     for (int i = 0; i < 2 * n; i++) {
-        bricks[i] = 0;
+        bricks[i] = 0; //empty first row
     }
     while (counter < num) {
         int i = rand() % (2 * n);
@@ -128,7 +128,7 @@ void make_bricks() {
         }
     }
     if (g + (double) num / (2 * n) > 1) {
-        int r = rand() % (2 * n - num);
+        int r = rand() % (2 * n - num); // num is the number of bricks.
         for (int i = 0, j = 0;; i++) {
             if (j == r && bricks[i] == 0) {
                 bricks[i] = BOMB; // it is a bomb
@@ -147,7 +147,7 @@ void draw_bricks() {
             int a = i, b = j;
             if (bricks[j + (2 * n) * i] > 0 && bricks[j + (2 * n) * i] != BOMB) { // if it's a brick and it's not a bomb!
                 //draw the Brick
-                thickLineRGBA(renderer, (Sint16) (START_X + j * BRICK_SIZE + 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Sint16) (START_X + j * BRICK_SIZE + BRICK_SIZE - 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Uint8) (BRICK_SIZE - 2), 255, 0, 0, (Uint8) (255 * ((double) bricks[j + (2 * n) * i] / (gun.score ? gun.score : 1)))); // transparency depends on the ratio of resistance to the score.
+                thickLineRGBA(renderer, (Sint16) (START_X + j * BRICK_SIZE + 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Sint16) (START_X + j * BRICK_SIZE + BRICK_SIZE - 1), (Sint16) (START_Y + i * BRICK_SIZE + BRICK_SIZE / 2), (Uint8) (BRICK_SIZE - 2), 255, 0, 0, (Uint8) (255 * ((double) bricks[j + (2 * n) * i] / (gun.score ? gun.score : 1)))); // transparency depends on the ratio of resistance to the score. syntax: renderer, start x, start y, finish x, finish y, thickness, RGBA.
                 char resistance[3];
                 sprintf(resistance, "%d", bricks[b + (2 * n) * a]);
                 // show the number of resistance in the brick

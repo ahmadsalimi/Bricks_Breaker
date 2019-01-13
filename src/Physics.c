@@ -324,7 +324,7 @@ int get_keys() {
             case SDL_QUIT:
                 return -1;
             case SDL_KEYDOWN: //pressing a key
-                keys[event.key.keysym.sym % 401] = 1;
+                keys[event.key.keysym.sym % 401] = 1; // save 1 if a key is pressed and %401 is to decrease the amount of a big number.
                 break;
             case SDL_KEYUP: //dropping a key
                 keys[event.key.keysym.sym % 401] = 0;
